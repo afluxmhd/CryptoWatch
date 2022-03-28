@@ -39,7 +39,8 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+      child:Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: const Color(0xFF001427),
@@ -135,6 +136,7 @@ class _PriceScreenState extends State<PriceScreen> {
           ),
         ),
       ),
+        ),
     );
   }
 }
